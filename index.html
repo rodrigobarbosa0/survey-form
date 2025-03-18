@@ -10,17 +10,17 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form action="" id="survey-form">
         <fieldset>
-          <label for="name">Name
+          <label for="name" id="name-label">Name
             <input name="name" id="name" type="text" placeholder="enter your name" required>
           </label>
-          <label for="email">Email
+          <label for="email" id="email-label">Email
             <input name="email" id="email" type="email" placeholder="enter your email" required>
           </label>
-          <label for="age">Age (optional)
-            <input name="age" id="age" type="text" placeholder="age">
+          <label for="age" id="number-label">Age (optional)
+            <input name="age" id="number" type="number" placeholder="age" min="14" max="99">
           </label>
           <label for="referrer">Which option best describes your current role?
-            <select name="referrer" id="referrer" required>
+            <select name="dropdown" id="dropdown" required>
               <option value="">select current role</option>
               <option value="1">Student</option>
               <option value="2">Full Time Job</option>
@@ -31,9 +31,9 @@
         </fieldset>
         <fieldset>
           <legend>Would you recommend freeCodeCamp to a friend?</legend>
-          <label for="definitely"><input class="inline" id="definitely" type="radio" name="account-type" checked required/> Definitely</label>
-          <label for="maybe"><input class="inline" id="maybe" type="radio" name="account-type" /> Maybe</label>
-          <label for="not-sure"><input class="inline" id="not-sure" type="radio" name="account-type" /> Not sure</label>
+          <label for="definitely"><input class="inline" value="value" id="definitely" type="radio" name="account-type" checked required/> Definitely</label>
+          <label for="maybe"><input class="inline" value="value" id="maybe" type="radio" name="account-type" /> Maybe</label>
+          <label for="not-sure"><input class="inline" value="value" id="not-sure" type="radio" name="account-type" /> Not sure</label>
         </fieldset>
         <fieldset>
           <label for="referrer">What is your favorite feature of freeCodeCamp?
