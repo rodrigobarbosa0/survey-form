@@ -6,15 +6,15 @@
     <title>survey form</title>
   </head>
   <body>
-    <h1>FreeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <form action="">
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
         <fieldset>
           <label for="name">Name
             <input name="name" id="name" type="text" placeholder="enter your name" required>
           </label>
           <label for="email">Email
-            <input name="email" id="email" type="text" placeholder="enter your email" required>
+            <input name="email" id="email" type="email" placeholder="enter your email" required>
           </label>
           <label for="age">Age (optional)
             <input name="age" id="age" type="text" placeholder="age">
@@ -60,6 +60,12 @@
             <input class="inline" name="terms" id="terms-and-conditions" type="checkbox" /> Forum
             <input class="inline" name="terms" id="terms-and-conditions" type="checkbox" /> Additional Courses
           </label>
+        </fieldset>
+        <fieldset>
+        </label>
+        <label for="bio">Any comments or suggestions?
+          <textarea name="bio" id="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
         </fieldset>
         <input type="submit" value="Submit" />  
     </form>
