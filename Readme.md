@@ -1,6 +1,6 @@
 date:19/03/25
 
-v 1.0.6
+v 1.1.0 Final
 
 Send a final project to certificate for frecodecamp, using html and css
 
